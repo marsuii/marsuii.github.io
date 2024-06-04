@@ -11,10 +11,10 @@ import rehypeImgSize from 'rehype-img-size';
 import rehypeSlug from 'rehype-slug';
 import rehypePrism from '@mapbox/rehype-prism';
 
-
 const isStorybook = process.argv[1]?.includes('storybook');
 
 export default defineConfig({
+  base: '/', // Base path set to root since it's a user/organization site
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
   build: {
     assetsInlineLimit: 1024,
