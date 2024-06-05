@@ -1,1 +1,0 @@
-import{j as o}from"./jsx-runtime-DexIYAB0.js";import{E as t}from"./error-iGVA9S2Y.js";import{b as e}from"./components-BkhkCc1U.js";import"./heading-DuUQSwSj.js";import"./decoder-text-BLw4w0C3.js";import"./image-B1jjqkK5.js";const a=()=>[{title:"404 | Redacted"}];function E(){const r=e();return o.jsx(t,{error:r})}export{E as ErrorBoundary,a as meta};
