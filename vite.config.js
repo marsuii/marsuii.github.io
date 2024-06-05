@@ -14,11 +14,22 @@ import rehypePrism from '@mapbox/rehype-prism';
 const isStorybook = process.argv[1]?.includes('storybook');
 
 export default defineConfig({
-  base: '/', // Base path set to root since it's a user/organization site
+  base: '/marsuii.github.io/', // Base path set to GitHub Pages URL
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
   build: {
     assetsInlineLimit: 1024,
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return id.toString().split('node_modules/')[1].split('/')[0].toString();
+          }
+        }
+      }
+    }
   },
+  
   server: {
     port: 7777,
   },
