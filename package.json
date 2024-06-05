@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "homepage": "https://hamishw.com",
+  "homepage": "https://marsuii.github.io/marsuii.github.io/",
   "description": "Portfolio site for Hamish Williams",
-  "repository": "https://github.com/HamishMW/portfolio.git",
+  "repository": "https://marsuii.github.io/marsuii.github.io/",
   "author": "Hamish Williams",
   "sideEffects": false,
   "type": "module",
